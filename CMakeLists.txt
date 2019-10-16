@@ -1,6 +1,11 @@
-cmake_minimum_required(VERSION 3.13)
-project(ThreadScheduler C)
+cmake_minimum_required(VERSION 3.12)
+project(ThreadScheduler)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ThreadScheduler main.c headers/prova.h src/prova.cpp)
+include_directories(headers)
+
+add_executable(ThreadScheduler
+        headers/prova.h
+        src/prova.cpp
+        main.c)
