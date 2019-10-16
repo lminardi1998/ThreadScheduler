@@ -13,6 +13,7 @@ void dothings(){
 }
 
 int main() {
+    printf("asdf");
     if (buf != 42) {
     setjmp(buf);
     dothings();
